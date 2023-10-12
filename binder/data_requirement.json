@@ -1,0 +1,22 @@
+{
+  "ch1": {
+    "src": "https://drive.google.com/uc?id=1DDKrNQN0Z-yxvNztOSqGdDkigIx6iqHS",
+    "dst": "../../data",
+    "projectName": "momi_ohbm23_course"
+  },
+  "ch2": {
+    "src": "https://drive.google.com/uc?id=13efSxw7Sv7rvjSlyIu6nARhOX8UuYD9i",
+    "dst": "../../data",
+    "projectName": "momi_ohbm23_course"
+  },
+  "ch3": {
+    "src": "https://drive.google.com/uc?id=1Dt_ze8lf_hnOv9gNCpLNJKq6rIUhFvoA",
+    "dst": "../../data",
+    "projectName": "momi_ohbm23_course"
+  },
+  "nilearn": {
+    "src": "from nilearn import datasets; import os; parcel_dir=os.path.join(_dst,\"01_Background_and_Theory\",\"rois\"); os.mkdir(parcel_dir); datasets.fetch_atlas_schaefer_2018(n_rois=200,yeo_networks=7,resolution_mm=2,data_dir=parcel_dir);",
+    "dst": "../../data",  
+    "projectName": "momi_ohbm23_course"
+  }
+}

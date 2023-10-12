@@ -1,0 +1,10 @@
+jupyter-book==0.14.0
+repo2data
+matplotlib
+numpy
+mne
+nilearn
+nibabel
+tvb-library
+tvb-data
+torch

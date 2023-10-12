@@ -1,0 +1,60 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: OHBM Educational Course on Whole-brain Models
+author: GriffLab
+logo: logo.png
+
+launch_buttons:
+  notebook_interface: "jupyterlab"
+  binderhub_url: https://test.conp.cloud
+  
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
+  timeout: 3000  # Set the timeout in seconds
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+sphinx:
+  local_extensions          :   # A list of local extensions to load by sphinx specified by "name: path" items
+  recursive_update          : false # A boolean indicating whether to overwrite the Sphinx config (true) or recursively update
+  config                    :   # key-value pairs to directly over-ride the Sphinx configuration
+    bibtex_reference_style: author_year
+    bibtex_default_style: plain
+    bibtex_tooltips: true
+    html_static_path: ['_static']
+    html_css_files: ['custom.css']
+
+bibtex_bibfiles:
+  - ../paper.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/GriffithsLab/OHBM-whole-brain-modelling-course # Online location of your book
+  branch: master  # Which branch of the repository should be used when creating links (optional)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true
+
+myst_admonition:
+  enable: true
+  alert: true
+  note: true
+  caution: true
+  danger: true
+  error: true
+  hint: true
+  important: true
+  tip: true
+  warning: true
+  wrap: false
+  add_pymarkdown_parser: true
+  heading_level: 2  # Set the top-level heading to H2
